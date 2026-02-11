@@ -113,6 +113,10 @@ input, select {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    html {
+        padding: 50px 55px;
+    }
+
     body {
         max-width: 25%;
         display: grid;
@@ -135,7 +139,7 @@ input, select {
     }
 
     #submit-button {
-        width: 30%;
+        width: 35%;
     }
 
     #overlay {
