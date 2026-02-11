@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking Form</title>
+</head>
+<body>
+    <header>
+        <heading>Book Your Dream Vacation</heading>
+    </header>
+    <form id="vacation-form">
+        <div id="destination-section">
+            <label for="destination">Destination
+                <span class="err" id="err-destination">
+                    Please select a destination
+                </span>
+            </label>
+            <select id="destination" name="destination">
+                <option value="none">Choose a destination...</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="paris">Paris, France</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="maldives">Maldives</option>
+                <option value="new-york">New York City, USA</option>
+            </select>
+        </div>
+        <div id="departure-section">
+            <label for="depart-date">Departure Date</label>
+            <input type="date" id="depart-date" name="depart-date">
+        </div>
+        <div id="traveler-section">
+            <label for="travelers">Number of Travelers
+                <span class="err" id="err-travelers">
+                    Must be greater than 0
+                </span>
+            </label>
+            <input type="number" id="travelers" name="travelers">
+        </div>
+        <button type="submit" id="submit-button">Find My Vacation</button>
+    </form>
+</body>
+</html>
