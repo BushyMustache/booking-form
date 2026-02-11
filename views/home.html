@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Booking Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/validation.js" defer></script>
+    <link rel="icon" href="images/icon.jpg">
 </head>
 <body>
     <header>
-        <heading>Book Your Dream Vacation</heading>
+        <h1 id="overlay">Book Your Dream Vacation</h1>
     </header>
     <form id="vacation-form">
         <div id="destination-section">
@@ -37,7 +40,16 @@
             </label>
             <input type="number" id="travelers" name="travelers">
         </div>
-        <button type="submit" id="submit-button">Find My Vacation</button>
+        <div id="button-section">
+            <button type="submit" id="submit-button">Find My Vacation</button>
+        </div>
     </form>
+    <footer>
+        <h1 id="github-link">GitHub Repository [
+            <a href="https://github.com/BushyMustache/booking-form">
+                https://github.com/BushyMustache/booking-form
+            </a>
+        ]</h1>
+    </footer>
 </body>
 </html>

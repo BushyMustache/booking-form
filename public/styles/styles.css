@@ -1,0 +1,113 @@
+html {
+    padding: 50px 100px;
+    background-color: blue;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+body {
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'hd hd hd'
+        'vf vf vf'
+        'vf vf vf'
+        'vf vf vf'
+        'ft ft ft';
+}
+
+header {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    color: white;
+    grid-area: hd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    color: white;
+    grid-area: ft;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 400%;
+}
+
+#github-link {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 200%;
+}
+
+a {
+    color: yellow;
+}
+
+
+#vacation-form {
+    background-color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'dst dst dst dst'
+        'dpt dpt tvl tvl'
+        'sbt sbt sbt sbt';
+
+    grid-area: vf;
+}
+
+#destination-section {
+    grid-area: dst;
+}
+
+#departure-section {
+    grid-area: dpt;
+}
+
+#traveler-section {
+    grid-area: tvl;
+}
+
+#button-section {
+    grid-area: sbt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-button {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 3rem;
+    width: 20%;
+    font-size: 17px;
+    padding: 10px;
+}
+
+input, select {
+    display: block;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: .25rem;
+    margin-bottom: 2rem;
+    padding: .75rem;
+}
+
+.err {
+    display: none;
+    color: darkred;
+}
