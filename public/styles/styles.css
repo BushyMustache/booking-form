@@ -111,3 +111,38 @@ input, select {
     display: none;
     color: darkred;
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        max-width: 25%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'hd hd'
+            'vf vf'
+            'vf vf'
+            'ft ft';
+    }
+
+    #vacation-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'dst dst dst'
+            'dpt dpt dpt'
+            'tvl tvl tvl'
+            'sbt sbt sbt';
+    }
+
+    #submit-button {
+        width: 30%;
+    }
+
+    #overlay {
+        font-size: 300%;
+    }
+
+    #github-link {
+        font-size: 150%;
+    }
+}
